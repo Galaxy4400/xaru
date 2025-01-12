@@ -106,6 +106,7 @@
 			visibility: hidden;
 			transition: all 0.3s ease 0s;
 			padding: rem(100) rem(15) rem(50) rem(15);
+			z-index: 2;
 			&._active {
 				opacity: 1;
 				visibility: visible;
