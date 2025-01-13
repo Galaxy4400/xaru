@@ -40,6 +40,32 @@
 			}
 		}
 	}
+	// .btn_trans
+	&_trans {
+		background: transparent;
+		color: var(--Primary-Black) !important;
+		border: rem(1) solid transparent;
+		text-transform: none;
+	}
+	// .btn_more
+	&_more {
+		gap: rem(13);
+		font-weight: 400;
+		&::after {
+			font-family: "icons";
+			@extend %ic;
+			content: "\e901";
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			font-size: rem(12);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
 	// .btn_fw
 	&_fw {
 		width: 100%;

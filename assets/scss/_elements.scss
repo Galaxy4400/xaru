@@ -314,6 +314,10 @@
 	background: var(--Primary-Blue);
 }
 
+.bg-orange {
+	background: var(--Primary-Orange);
+}
+
 //===============================================================
 .tag {
 	display: inline-flex;
@@ -359,6 +363,9 @@
 		color: var(--Secondary-Black-2);
 		font-size: rem(18);
 		max-width: rem(850);
+		@media (max-width: em($md3)) {
+			font-size: rem(16);
+		}
 	}
 
 	// .head-container_center
