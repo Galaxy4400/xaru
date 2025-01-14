@@ -69,7 +69,7 @@ function getMainSliderBullet(index) {
 /**
  * Инициализация слайдера
  */
-const swiper = new Swiper(".dig-ads-slider", {
+const digAdsSlider = new Swiper(".dig-ads-slider", {
 	speed: 1500,
 	pagination: {
 		el: ".dig-ads-slider__pagination",
@@ -86,6 +86,31 @@ const swiper = new Swiper(".dig-ads-slider", {
 		1501: {
 			spaceBetween: 30,
 			slidesPerView: 4,
+			allowTouchMove: false,
+		},
+	},
+});
+
+/**
+ * Инициализация слайдера
+ */
+const demoSlider = new Swiper(".demo-slider", {
+	speed: 1500,
+	pagination: {
+		el: ".demo-slider__pagination",
+		bulletClass: "demo-slider__bullet",
+		bulletActiveClass: "_active",
+		clickable: true,
+	},
+	breakpoints: {
+		320: {
+			spaceBetween: 16,
+			slidesPerView: "auto",
+			allowTouchMove: true,
+		},
+		1201: {
+			spaceBetween: 30,
+			slidesPerView: 3,
 			allowTouchMove: false,
 		},
 	},

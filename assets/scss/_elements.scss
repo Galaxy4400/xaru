@@ -310,15 +310,6 @@
 }
 
 //===============================================================
-.bg-blue {
-	background: var(--Primary-Blue);
-}
-
-.bg-orange {
-	background: var(--Primary-Orange);
-}
-
-//===============================================================
 .tag {
 	display: inline-flex;
 	justify-content: center;
@@ -327,7 +318,8 @@
 	padding: rem(10) rem(24);
 	gap: rem(8);
 	border-radius: rem(999);
-	color: var(--Primary-White);
+	border: rem(1) solid var(--Primary-Black);
+	color: var(--Primary-Black);
 	@media (max-width: em($md3)) {
 		height: rem(36);
 		padding: rem(8) rem(12);
@@ -335,6 +327,25 @@
 		&::before {
 			font-size: rem(12);
 		}
+	}
+
+	// .tag_blue
+	&_blue {
+		background: var(--Primary-Blue);
+		border: rem(1) solid var(--Primary-Blue);
+		color: var(--Primary-White);
+	}
+	// .tag_orange
+	&_orange {
+		background: var(--Primary-Orange);
+		border: rem(1) solid var(--Primary-Orange);
+		color: var(--Primary-White);
+	}
+	// .tag_green
+	&_green {
+		background: var(--Primary-Green);
+		border: rem(1) solid var(--Primary-Green);
+		color: var(--Primary-White);
 	}
 }
 

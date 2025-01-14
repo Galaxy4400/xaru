@@ -69,11 +69,6 @@
 	}
 	// .header__sign-in
 	&__sign-in {
-		width: rem(180);
-		height: rem(46);
-		@media (max-width: em($md1)) {
-			display: none;
-		}
 	}
 }
 
@@ -156,12 +151,18 @@
 	}
 	// .menu__sign-in
 	&__sign-in {
-		width: rem(180);
-		height: rem(42);
-		flex: 0 0 rem(42);
+		display: flex;
+		flex-direction: column;
+		gap: rem(12);
 		@media (min-width: em($md1+1)) {
 			display: none;
 		}
+	}
+	// .menu__sign-in-link
+	&__sign-in-link {
+		width: rem(236);
+		height: rem(42);
+		padding: rem(10) rem(30);
 	}
 }
 
@@ -203,5 +204,70 @@
 	font-size: rem(18);
 	@media (max-width: em($md1)) {
 		display: none;
+	}
+}
+
+.sign-in-block {
+	position: relative;
+	@media (max-width: em($md1)) {
+		display: none;
+	}
+	// .sign-in-block__btn
+	&__btn {
+		width: rem(180);
+		height: rem(46);
+	}
+	// .sign-in-block__list
+	&__list {
+		position: absolute;
+		z-index: 5;
+		top: 100%;
+		left: 0;
+		translate: 0 rem(4);
+		background: var(--Primary-White);
+		padding: rem(15) rem(24);
+		border-radius: rem(6);
+		box-shadow: 0px 5px 15px 0px rgba(13, 50, 143, 0.1);
+		display: grid;
+		grid-gap: rem(16);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease 0s;
+		@media (max-width: em($md0)) {
+			left: unset;
+			right: 0;
+		}
+		&._active {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	// .sign-in-block__item
+	&__item {
+	}
+	// .sign-in-block__link
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		white-space: nowrap;
+		gap: rem(15);
+		// .sign-in-block__link_blue
+		&_blue {
+			&::before {
+				color: var(--Primary-Blue);
+			}
+		}
+		// .sign-in-block__link_green
+		&_green {
+			&::before {
+				color: var(--Primary-Green);
+			}
+		}
+		// .sign-in-block__link_orange
+		&_orange {
+			&::before {
+				color: var(--Primary-Orange);
+			}
+		}
 	}
 }

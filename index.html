@@ -40,14 +40,25 @@
 									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Contacts</a></li>
 									<li class="menu__item" data-menu-item><a class="menu__link" href="#">FAQs</a></li>
 								</ul>
-								<a class="menu__sign-in btn" href="#">Sign in</a>
+								<div class="menu__sign-in">
+									<a class="menu__sign-in-link btn btn_white" href="#">Cards - Sign in</a>
+									<a class="menu__sign-in-link btn btn_white" href="#">Exchange - Sign in</a>
+									<a class="menu__sign-in-link btn btn_white" href="#">CoinsFlow - Sign in</a>
+								</div>
 							</nav>
 						</div>
 					</div>
 					<div class="header__column header__column_actions">
 						<button class="header__icon search-btn _icon-search" type="button"></button>
 						<a class="header__icon user-cabinet _icon-person" href="#"></a>
-						<a class="header__sign-in btn btn_white" href="#">Sign in</a>
+						<div class="header__sign-in sign-in-block">
+							<button class="sign-in-block__btn btn btn_white" type="button" data-link="sign-in-block__list">Sign in</button>
+							<ul class="sign-in-block__list">
+								<li class="sign-in-block__item"><a class="sign-in-block__link sign-in-block__link_blue _icon-dec-1" href="#">Cards - Sign in</a></li>
+								<li class="sign-in-block__item"><a class="sign-in-block__link sign-in-block__link_green _icon-dec-3" href="#">Exchange - Sign in</a></li>
+								<li class="sign-in-block__item"><a class="sign-in-block__link sign-in-block__link_orange _icon-dec-2" href="#">CoinsFlow - Sign in</a></li>
+							</ul>
+						</div>
 						<button class="menu-icon" type="button" data-menu-icon="main-menu"></button>
 					</div>
 				</div>
@@ -143,11 +154,11 @@
 			<section class="dig-ads">
 				<div class="dig-ads__container _container">
 					<div class="head-container head-container_center">
-						<div class="head-container__tag tag _icon-dec-1 bg-blue">Cards for digital ads</div>
+						<div class="head-container__tag tag tag_blue _icon-dec-1">Cards for digital ads</div>
 						<h2 class="head-container__title">Optimize Your Digital Ad Spend. Enjoy Full Control </h2>
 						<p class="head-container__text">XARU Cards streamlines ad spend management for media teams and agencies. Issue unlimited cards, track budgets in real time, assign team roles, and safeguard assets with actionable insights.</p>
 					</div>
-					<div class="dig-ads-slider" data-swiper>
+					<div class="dig-ads__slider dig-ads-slider" data-swiper>
 						<div class="dig-ads-slider__slides">
 							<div class="dig-ads-slider__slide dig-ads-slide">
 								<div class="dig-ads-slide__content">
@@ -184,25 +195,96 @@
 						</div>
 						<div class="dig-ads-slider__pagination"></div>
 					</div>
+					<div class="dig-ads__actions">
+						<a class="dig-ads__sign-up btn" href="#">Sign up</a>
+						<a class="dig-ads__more btn btn_trans btn_more" href="#">View Cards</a>
+					</div>
 				</div>
 			</section>
-			<section class="block-1">
-				<div class="block-1__container _container">
-					<div class="block-1__body">
-						<div class="block-1__column block-1__column_left">
-							<figure class="block-1__img">
+			<section class="exchange">
+				<div class="exchange__container _container">
+					<div class="exchange__body">
+						<div class="exchange__column exchange__column_left">
+							<div class="head-container">
+								<div class="head-container__tag tag tag_green _icon-dec-2">Exchange: Buy, Sell & Swap Crypto</div>
+								<h2 class="head-container__title">Seamless Crypto & Fiat Exchange for All</h2>
+								<p class="head-container__text">Your universal gateway to digital and traditional assets, designed for both personal and business needs.</p>
+							</div>
+							<div class="exchange__actions" data-adapt="exchange__column_right,767">
+								<a class="exchange__sign-up btn" href="#">Sign up</a>
+								<a class="exchange__more btn btn_trans btn_more" href="#">View Coinsflow</a>
+							</div>
+						</div>
+						<div class="exchange__column exchange__column_right">
+							<div class="exchange__tabs exchange-tabs" data-tabs="exchange-tabs">
+								<div class="exchange-tabs__nav" data-tabs-controls>
+									<button class="exchange-tabs__btn" type="button">For Corporates</button>
+									<button class="exchange-tabs__btn" type="button">For Individuals</button>
+								</div>
+								<div class="exchange-tabs__content" data-tabs-container>
+									<div class="exchange-tabs__panel exchange-tabs__panel_left">
+										<div class="exchange-tabs__body">
+											<div class="exchange-tabs__item">
+												<img class="exchange-tabs__icon" src="assets/img/tabs/1.svg" alt="icon">
+												<h6 class="exchange-tabs__title">Guaranteed MiCA Compliance for Your Business</h6>
+											</div>
+											<div class="exchange-tabs__item">
+												<img class="exchange-tabs__icon" src="assets/img/tabs/2.svg" alt="icon">
+												<h6 class="exchange-tabs__title">Buy, sell, swap & store your assets</h6>
+											</div>
+											<div class="exchange-tabs__item">
+												<img class="exchange-tabs__icon" src="assets/img/tabs/3.svg" alt="icon">
+												<h6 class="exchange-tabs__title">Link cards to USDT, BTC or EUR</h6>
+											</div>
+											<div class="exchange-tabs__item">
+												<img class="exchange-tabs__icon" src="assets/img/tabs/4.svg" alt="icon">
+												<h6 class="exchange-tabs__title">Dedicated virtual IBAN</h6>
+											</div>
+										</div>
+									</div>
+									<div class="exchange-tabs__panel exchange-tabs__panel_right">
+										<div class="exchange-tabs__body">
+											<div class="exchange-tabs__item">
+												<img class="exchange-tabs__icon" src="assets/img/tabs/2.svg" alt="icon">
+												<h6 class="exchange-tabs__title">Buy BTC, USDT, ETH, USDC 100% secure</h6>
+											</div>
+											<div class="exchange-tabs__item">
+												<img class="exchange-tabs__icon" src="assets/img/tabs/1.svg" alt="icon">
+												<h6 class="exchange-tabs__title">100% MiCA compliant</h6>
+											</div>
+											<div class="exchange-tabs__item">
+												<img class="exchange-tabs__icon" src="assets/img/tabs/3.svg" alt="icon">
+												<h6 class="exchange-tabs__title">Issue crypto cards & spend anywhere</h6>
+											</div>
+											<div class="exchange-tabs__item">
+												<img class="exchange-tabs__icon" src="assets/img/tabs/4.svg" alt="icon">
+												<h6 class="exchange-tabs__title">100% MiCA compliant</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="coinsflow">
+				<div class="coinsflow__container _container">
+					<div class="coinsflow__body">
+						<div class="coinsflow__column coinsflow__column_left">
+							<figure class="coinsflow__img">
 								<img src="assets/img/blocks/1.jpg" alt="img">
 							</figure>
 						</div>
-						<div class="block-1__column block-1__column_right">
+						<div class="coinsflow__column coinsflow__column_right">
 							<div class="head-container">
-								<div class="head-container__tag tag _icon-dec-2 bg-orange">Coinsflow: simplify & automate</div>
+								<div class="head-container__tag tag tag_orange _icon-dec-2">Coinsflow: simplify & automate</div>
 								<h2 class="head-container__title">Master Your Crypto Cash Flow</h2>
 								<p class="head-container__text">Say goodbye to messy records. Track spending, automate categories, and get instant insights with tools that simplify your crypto finances.</p>
 							</div>
-							<div class="block-1__actions" data-adapt="block-1__column_left,767">
-								<a class="block-1__sign-up btn" href="#">Sign up</a>
-								<a class="block-1__more btn btn_trans btn_more" href="#">View Coinsflow</a>
+							<div class="coinsflow__actions" data-adapt="coinsflow__column_left,767">
+								<a class="coinsflow__sign-up btn" href="#">Sign up</a>
+								<a class="coinsflow__more btn btn_trans btn_more" href="#">View Coinsflow</a>
 							</div>
 						</div>
 					</div>
@@ -228,6 +310,47 @@
 							<span class="values-block__title h2">24/7</span>
 							<span class="values-block__text">available</span>
 						</div>
+					</div>
+				</div>
+			</section>
+			<section class="demo">
+				<div class="demo__container _container">
+					<div class="head-container head-container_center">
+						<div class="head-container__tag tag _icon-dec-1">See Xaru in Action</div>
+						<h2 class="head-container__title">Request a Product Demo</h2>
+						<p class="head-container__text">Not sure where to start? Let us help you with a product demo tailored to your needs. Choose one of the products to schedule a demo call or contact us for more information.</p>
+					</div>
+					<div class="demo-slider" data-swiper>
+						<div class="demo-slider__slides">
+							<div class="demo-slider__slide demo-slide">
+								<div class="demo-slide__content">
+									<img class="demo-slide__icon" src="assets/img/svg/cards.svg" alt="icon">
+									<a class="demo-slide__link demo-slide__link_blue _icon-arrow-1" href="#">Find out more about Cards</a>
+									<figure class="demo-slide__img _ibg">
+										<img src="assets/img/demo/1.png" alt="img">
+									</figure>
+								</div>
+							</div>
+							<div class="demo-slider__slide demo-slide">
+								<div class="demo-slide__content">
+									<img class="demo-slide__icon" src="assets/img/svg/exchange.svg" alt="icon">
+									<a class="demo-slide__link demo-slide__link_green _icon-arrow-1" href="#">Find out more about Exchange</a>
+									<figure class="demo-slide__img _ibg">
+										<img src="assets/img/demo/2.png" alt="img">
+									</figure>
+								</div>
+							</div>
+							<div class="demo-slider__slide demo-slide">
+								<div class="demo-slide__content">
+									<img class="demo-slide__icon" src="assets/img/svg/coinsflow.svg" alt="icon">
+									<a class="demo-slide__link demo-slide__link_orange _icon-arrow-1" href="#">Find out more about CoinsFlow</a>
+									<figure class="demo-slide__img _ibg">
+										<img src="assets/img/demo/3.png" alt="img">
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="demo-slider__pagination"></div>
 					</div>
 				</div>
 			</section>
