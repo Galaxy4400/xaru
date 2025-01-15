@@ -73,7 +73,7 @@ const digAdsSlider = new Swiper(".dig-ads-slider", {
 	speed: 1500,
 	pagination: {
 		el: ".dig-ads-slider__pagination",
-		bulletClass: "dig-ads-slider__bullet",
+		bulletClass: "pagination__bullet",
 		bulletActiveClass: "_active",
 		clickable: true,
 	},
@@ -98,7 +98,7 @@ const demoSlider = new Swiper(".demo-slider", {
 	speed: 1500,
 	pagination: {
 		el: ".demo-slider__pagination",
-		bulletClass: "demo-slider__bullet",
+		bulletClass: "pagination__bullet",
 		bulletActiveClass: "_active",
 		clickable: true,
 	},
@@ -112,6 +112,47 @@ const demoSlider = new Swiper(".demo-slider", {
 			spaceBetween: 30,
 			slidesPerView: 3,
 			allowTouchMove: false,
+		},
+	},
+});
+
+/**
+ * Инициализация слайдера
+ */
+const exchangeSlider = new Swiper(".exchange-slider", {
+	speed: 1500,
+	spaceBetween: 16,
+	slidesPerView: "auto",
+	allowTouchMove: true,
+	pagination: {
+		el: ".exchange-slider__pagination",
+		bulletClass: "pagination__bullet",
+		bulletActiveClass: "_active",
+		clickable: true,
+	},
+});
+
+const reviewsSlider = new Swiper(".reviews-slider", {
+	speed: 1500,
+	pagination: {
+		el: ".reviews-slider__pagination",
+		bulletClass: "pagination__bullet",
+		bulletActiveClass: "_active",
+		clickable: true,
+	},
+	navigation: {
+		disabledClass: "_disabled",
+		prevEl: ".reviews__arrow_prev",
+		nextEl: ".reviews__arrow_next",
+	},
+	breakpoints: {
+		320: {
+			spaceBetween: 16,
+			slidesPerView: "auto",
+		},
+		767: {
+			spaceBetween: 30,
+			slidesPerView: 2,
 		},
 	},
 });
