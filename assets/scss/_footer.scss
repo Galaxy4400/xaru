@@ -161,27 +161,3 @@
 		padding: rem(4) rem(6);
 	}
 }
-
-.footer-form {
-	display: flex;
-	gap: rem(8);
-	@media (max-width: em($md4)) {
-		flex-direction: column;
-		align-items: center;
-	}
-	// .footer-form__column
-	&__column {
-		flex: 1 1 auto;
-		width: 100%;
-	}
-	// .footer-form__input
-	&__input {
-	}
-	// .footer-form__btn
-	&__btn {
-		width: rem(180);
-		@media (min-width: ($md4+1+"px")) {
-			flex: 0 0 rem(180);
-		}
-	}
-}

@@ -410,3 +410,28 @@
 		}
 	}
 }
+
+//===============================================================
+.subscribe-form {
+	display: flex;
+	gap: rem(8);
+	@media (max-width: em($md4)) {
+		flex-direction: column;
+		align-items: center;
+	}
+	// .subscribe-form__column
+	&__column {
+		flex: 1 1 auto;
+		width: 100%;
+	}
+	// .subscribe-form__input
+	&__input {
+	}
+	// .subscribe-form__btn
+	&__btn {
+		width: rem(180);
+		@media (min-width: ($md4+1+"px")) {
+			flex: 0 0 rem(180);
+		}
+	}
+}
