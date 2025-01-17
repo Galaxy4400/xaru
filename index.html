@@ -27,10 +27,6 @@
 					<div class="header__column header__column_menu">
 						<div class="menu" data-menu="main-menu">
 							<nav class="menu__body" data-menu-container="main-menu">
-								<form class="search-form _active" action="./search/" method="get">
-									<input class="search-form__input" type="text" name="s" placeholder="Search...">
-									<button class="search-form__btn _icon-search" type="submit"></button>
-								</form>
 								<ul class="menu__list">
 									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Cards</a></li>
 									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Exchange</a></li>
@@ -49,7 +45,13 @@
 						</div>
 					</div>
 					<div class="header__column header__column_actions">
-						<button class="header__icon search-btn _icon-search" type="button"></button>
+						<div class="header__search-line">
+							<form class="search-form" action="./search/" method="get" data-adapt="menu__body,991,first">
+								<input class="search-form__input" type="text" name="s" placeholder="Search...">
+								<button class="search-form__btn _icon-search" type="submit"></button>
+							</form>
+							<button class="header__icon search-btn _icon-search" type="button" data-link="search-form"></button>
+						</div>
 						<a class="header__icon user-cabinet _icon-person" href="#"></a>
 						<div class="header__sign-in sign-in-block">
 							<button class="sign-in-block__btn btn btn_white" type="button" data-link="sign-in-block__list">Sign in</button>
@@ -523,7 +525,7 @@
 					<div class="head-container head-container_center">
 						<div class="head-container__tag tag">Contacts</div>
 						<h2 class="head-container__title">Get in Touch with Us</h2>
-						<p class="head-container__text">If you have a question or need help, please contact us! Our team is always ready to help.  You can also check out the FAQs page for quick answers to frequently asked questions.</p>
+						<p class="head-container__text">If you have a question or need help, please contact us! Our team is always ready to help. You can also check out the FAQs page for quick answers to frequently asked questions.</p>
 					</div>
 					<div class="contacts__actions">
 						<a class="contacts__btn btn" href="#">CONTACTS</a>

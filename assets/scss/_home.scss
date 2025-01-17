@@ -449,6 +449,11 @@
 			font-size: rem(20);
 		}
 	}
+
+	// .values-block_white
+	&_white {
+		background: transparent;
+	}
 }
 
 //===============================================================

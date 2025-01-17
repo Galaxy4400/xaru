@@ -55,6 +55,10 @@
 			gap: rem(16);
 		}
 	}
+	// .header__search-line
+	&__search-line {
+		position: relative;
+	}
 	// .header__icon
 	&__icon {
 		height: rem(50);
@@ -172,7 +176,16 @@
 	display: flex;
 	min-width: rem(290);
 	@media (min-width: em($md1+1)) {
-		display: none;
+		position: absolute;
+		top: 0;
+		right: calc(100% - rem(50));
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease 0s;
+		&._active {
+			opacity: 1;
+			visibility: visible;
+		}
 	}
 	// .search-form__input
 	&__input {
@@ -195,6 +208,12 @@
 
 .search-btn {
 	font-size: rem(16);
+	transition: all 0.3s ease 0s;
+	&._active {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
 	@media (max-width: em($md1)) {
 		display: none;
 	}
