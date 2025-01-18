@@ -8,6 +8,15 @@
 }
 
 /**
+ * Устанавливает ограничение блоку по ширине
+ */
+._container-narrow {
+	max-width: rem(1142);
+	padding: 0px px($containerPadding);
+	margin: 0 auto;
+}
+
+/**
  * Прикрепляет блок к верхнему краю экрана
  */
 ._fixed {
@@ -57,7 +66,7 @@
  */
 ._req {
 	&::after {
-		content: '*';
+		content: "*";
 		color: var(--color-green);
 		margin: 0px 0px 0px rem(3);
 	}

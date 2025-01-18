@@ -5906,6 +5906,15 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 /**
+ * Устанавливает ограничение блоку по ширине
+ */
+._container-narrow {
+  max-width: 71.375rem;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+/**
  * Прикрепляет блок к верхнему краю экрана
  */
 ._fixed {
@@ -9075,4 +9084,141 @@ textarea.input {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+}
+
+.we-can {
+  padding: 5rem 0px;
+}
+@media (max-width: 47.9375em) {
+  .we-can {
+    padding: 2.125rem 0px;
+  }
+}
+.we-can__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -0.9375rem;
+}
+@media (max-width: 47.9375em) {
+  .we-can__body {
+    margin: -0.5rem;
+  }
+}
+.we-can__column {
+  padding: 0.9375rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+}
+@media (max-width: 47.9375em) {
+  .we-can__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+.we-can__column_big {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+@media (max-width: 47.9375em) {
+  .we-can__column_big {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0.5rem;
+  }
+}
+.we-can-item {
+  border-radius: 0.875rem;
+  background: var(--Secondary-Gray-4);
+  padding: 1.875rem 1.5rem;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  text-align: center;
+  height: 100%;
+}
+@media (max-width: 47.9375em) {
+  .we-can-item {
+    padding: 1rem 0.875rem;
+  }
+}
+.team {
+  background: var(--Secondary-Gray-4);
+  padding: 5rem 0px 0px;
+}
+@media (max-width: 47.9375em) {
+  .team {
+    padding: 2.125rem 0px;
+  }
+}
+.team__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem 1.875rem;
+}
+@media (max-width: 47.9375em) {
+  .team__body {
+    gap: 0.625rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.team-item__img {
+  border-radius: 1.5rem 1.5rem 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  overflow: hidden;
+  height: 100%;
+}
+@media (max-width: 47.9375em) {
+  .team-item__img {
+    border-radius: 0.625rem 0.625rem 0px 0px;
+  }
+}
+
+.partners {
+  padding: 5rem 0px;
+}
+@media (max-width: 47.9375em) {
+  .partners {
+    padding: 2.125rem 0px;
+    background: var(--Secondary-Gray-4);
+  }
+}
+@media (max-width: 61.9375em) {
+  .partners__wrapper {
+    overflow-x: auto;
+  }
+}
+.partners__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.875rem;
+}
+@media (max-width: 61.9375em) {
+  .partners__body {
+    gap: 1rem 1.25rem;
+  }
+}
+@media (max-width: 61.9375em) {
+  .partner-item {
+    width: 14.0625rem;
+  }
+}
+.partner-item__img {
+  border-radius: 0.75rem;
+  overflow: hidden;
 }
