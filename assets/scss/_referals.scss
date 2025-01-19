@@ -1,0 +1,126 @@
+.referal-head {
+	padding: rem(80) rem(0);
+	@media (max-width: em($md3)) {
+		padding: rem(34) 0px;
+	}
+	// .referal-head__container
+	&__container {
+	}
+	// .referal-head__body
+	&__body {
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		gap: rem(30);
+		margin: 0px 0px rem(60) 0px;
+		@media (max-width: em($md1)) {
+			gap: rem(24);
+			grid-template-columns: 1fr 2fr;
+		}
+		@media (max-width: em($md2)) {
+			grid-template-columns: 1fr;
+		}
+	}
+	// .referal-head__column
+	&__column {
+		// .referal-head__column_content
+		&_content {
+		}
+		// .referal-head__column_img
+		&_img {
+			height: 100%;
+		}
+	}
+	// .referal-head__img
+	&__img {
+		border-radius: rem(22);
+		overflow: hidden;
+		@media (min-width: em($md2+1)) and (max-width: em($md1)) {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+			}
+		}
+	}
+
+	// .referal-head__head-container
+	&__head-container {
+		@media (max-width: em($md2)) {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+}
+
+//===============================================================
+.how {
+	padding: rem(80) rem(0);
+	@media (max-width: em($md3)) {
+		padding: rem(34) rem(0);
+	}
+	// .how__container
+	&__container {
+	}
+	// .how__title
+	&__title {
+		text-align: center;
+		margin: 0px 0px rem(30) 0px;
+	}
+	// .how__body
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: rem(16) rem(30);
+		margin: 0px 0px rem(30) 0px;
+		@media (max-width: em($md2)) {
+			grid-template-columns: 1fr;
+		}
+	}
+	// .how__item
+	&__item {
+	}
+	// .how__actions
+	&__actions {
+		display: flex;
+		justify-content: center;
+	}
+	// .how__btn
+	&__btn {
+		width: rem(180);
+	}
+}
+
+.how-item {
+	height: 100%;
+	padding: rem(30) rem(24);
+	background: var(--Gray-4);
+	border-radius: rem(14);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: rem(16);
+	@media (max-width: em($md3)) {
+		padding: rem(16) rem(14);
+	}
+	// .how-item__title
+	&__title {
+		@include adaptiv-value(font-size, 24, 17, 1);
+		line-height: 130%;
+		text-align: center;
+	}
+	// .how-item__img
+	&__img {
+		border-radius: rem(12);
+		overflow: hidden;
+		@media (max-width: em($md3)) {
+			border-radius: rem(8);
+		}
+	}
+}

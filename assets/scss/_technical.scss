@@ -10,6 +10,15 @@
 /**
  * Устанавливает ограничение блоку по ширине
  */
+._container-small {
+	max-width: rem(1436);
+	padding: 0px px($containerPadding);
+	margin: 0 auto;
+}
+
+/**
+ * Устанавливает ограничение блоку по ширине
+ */
 ._container-narrow {
 	max-width: rem(1142);
 	padding: 0px px($containerPadding);

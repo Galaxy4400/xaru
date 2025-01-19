@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<div class="header__body">
+					<div class="header__column header__column_logo">
+						<a class="logo" href="#">
+							<img src="assets/img/svg/logo.svg" alt="logo">
+						</a>
+					</div>
+					<div class="header__column header__column_menu">
+						<div class="menu" data-menu="main-menu">
+							<nav class="menu__body" data-menu-container="main-menu">
+								<ul class="menu__list">
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Cards</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Exchange</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Coinsflow</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Pricing</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Referrals</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Contacts</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">FAQs</a></li>
+								</ul>
+								<div class="menu__sign-in">
+									<a class="menu__sign-in-link btn btn_white" href="#">Cards - Sign in</a>
+									<a class="menu__sign-in-link btn btn_white" href="#">Exchange - Sign in</a>
+									<a class="menu__sign-in-link btn btn_white" href="#">CoinsFlow - Sign in</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+					<div class="header__column header__column_actions">
+						<div class="header__search-line">
+							<form class="search-form" action="./search/" method="get" data-adapt="menu__body,991,first">
+								<input class="search-form__input" type="text" name="s" placeholder="Search...">
+								<button class="search-form__btn _icon-search" type="submit"></button>
+							</form>
+							<button class="header__icon search-btn _icon-search" type="button" data-link="search-form"></button>
+						</div>
+						<a class="header__icon user-cabinet _icon-person" href="#"></a>
+						<div class="header__sign-in sign-in-block">
+							<button class="sign-in-block__btn btn btn_white" type="button" data-link="sign-in-block__list">Sign in</button>
+							<ul class="sign-in-block__list">
+								<li class="sign-in-block__item"><a class="sign-in-block__link sign-in-block__link_blue _icon-dec-1" href="#">Cards - Sign in</a></li>
+								<li class="sign-in-block__item"><a class="sign-in-block__link sign-in-block__link_green _icon-dec-3" href="#">Exchange - Sign in</a></li>
+								<li class="sign-in-block__item"><a class="sign-in-block__link sign-in-block__link_orange _icon-dec-2" href="#">CoinsFlow - Sign in</a></li>
+							</ul>
+						</div>
+						<button class="menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<section class="referal-head">
+				<div class="referal-head__container _container">
+					<div class="referal-head__body">
+						<div class="referal-head__column_content">
+							<div class="referal-head__head-container head-container">
+								<h2 class="head-container__title">Finally, a Referral Program That Actually Rewards You!</h2>
+								<p class="head-container__text">If you see value in our products - share them with your network and get rewarded. Learn how you can benefit from XARU's generous referral programs.</p>
+							</div>
+						</div>
+						<div class="referal-head__column_img">
+							<figure class="referal-head__img">
+								<img src="assets/img/blocks/2.jpg" alt="image">
+							</figure>
+						</div>
+					</div>
+					<div class="three-products">
+						<div class="three-products__body">
+							<div class="three-products__item three-products-item">
+								<div class="three-products-item__content">
+									<img class="three-products-item__icon" src="assets/img/svg/cards.svg" alt="icon">
+									<a class="three-products-item__link three-products-item__link_blue _icon-arrow-1" href="#">Unlimited corporate cards for your team</a>
+								</div>
+							</div>
+							<div class="three-products__item three-products-item">
+								<div class="three-products-item__content">
+									<img class="three-products-item__icon" src="assets/img/svg/exchange.svg" alt="icon">
+									<a class="three-products-item__link three-products-item__link_green _icon-arrow-1" href="#">Seamless сrypto and fiat exchange</a>
+								</div>
+							</div>
+							<div class="three-products__item three-products-item">
+								<div class="three-products-item__content">
+									<img class="three-products-item__icon" src="assets/img/svg/coinsflow.svg" alt="icon">
+									<a class="three-products-item__link three-products-item__link_orange _icon-arrow-1" href="#">Optimize Crypto Operations and Manage Cash Flow</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="how">
+				<div class="how__container _container-small">
+					<h2 class="how__title">How it Works?</h2>
+					<div class="how__body">
+						<div class="how__item how-item">
+							<div class="how-item__title">Generate an invitation link and share with your network. A unique identifier is included in the URL.</div>
+							<figure class="how-item__img">
+								<img src="assets/img/how/1.jpg" alt="img">
+							</figure>
+						</div>
+						<div class="how__item how-item">
+							<div class="how-item__title">Log in to your account and see the progress of your referrals. Watch your passive income grow.</div>
+							<figure class="how-item__img">
+								<img src="assets/img/how/2.jpg" alt="img">
+							</figure>
+						</div>
+						<div class="how__item how-item">
+							<div class="how-item__title">Withdraw the accumulated amounts whenever you need them.</div>
+							<figure class="how-item__img">
+								<img src="assets/img/how/3.jpg" alt="img">
+							</figure>
+						</div>
+					</div>
+					<div class="how__actions">
+						<button class="how__btn btn" type="submit">SIGN UP</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts">
+				<div class="contacts__container _container">
+					<div class="head-container head-container_center">
+						<div class="head-container__tag tag">Contacts</div>
+						<h2 class="head-container__title">Get in Touch with Us</h2>
+						<p class="head-container__text">If you have a question or need help, please contact us! Our team is always ready to help. You can also check out the FAQs page for quick answers to frequently asked questions.</p>
+					</div>
+					<div class="contacts__actions">
+						<a class="contacts__btn btn" href="#">CONTACTS</a>
+						<a class="contacts__btn btn btn_white" href="#">FAQS</a>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__row footer-top">
+						<a class="footer-top__logo" href="">
+							<img src="assets/img/svg/logo.svg" alt="logo">
+						</a>
+						<div class="footer-top__language language">
+							<button class="language__btn _icon-planet" type="button" data-link="language__list">EN (EU)</button>
+							<ul class="language__list" data-language-list>
+								<li class="language__item">lang</li>
+								<li class="language__item">lang</li>
+								<li class="language__item">lang</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__row footer-main">
+						<div class="footer-main__column footer-main__column_left">
+							<div class="footer-main__menu footer-menu">
+								<h5 class="footer-menu__title">Company</h5>
+								<nav class="footer-menu__body">
+									<ul class="footer-menu__list">
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">About</a></li>
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">Pricing</a></li>
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">Referral</a></li>
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">Contact us</a></li>
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQs</a></li>
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">Legal</a></li>
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">Blog</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="footer-main__menu footer-menu">
+								<h5 class="footer-menu__title">Products</h5>
+								<nav class="footer-menu__body">
+									<ul class="footer-menu__list">
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">Cards</a></li>
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">Exchange</a></li>
+										<li class="footer-menu__item"><a class="footer-menu__link" href="#">CoinsFlow</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="footer-main__column footer-main__column_right">
+							<form class="footer-main__form subscribe-form" name="subscribe" action="./" method="post" data-form data-validation data-autocomplete-off>
+								<div class="subscribe-form__column">
+									<input class="subscribe-form__input input" type="email" name="Email" required placeholder="Enter email">
+								</div>
+								<button class="subscribe-form__btn btn" type="submit">Subscribe</button>
+							</form>
+							<p class="footer-main__text">By subscribing, you are agreeing to receive information about Xaru products and events and to have your personal information managed in accordance with the terms of Xaru’s Privacy Notice. You can unsubscribe at any time.</p>
+							<div class="footer-main__social">
+								<a class="social _icon-x" href="#"></a>
+								<a class="social _icon-f" href="#"></a>
+								<a class="social _icon-in" href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__row footer-bottom">
+						<div class="footer-bottom__top">
+							<p>@Xaru 2025. All rights reserved</p>
+							<nav>
+								<ul>
+									<li><a href="#">Cookie Policy</a></li>
+									<li><a href="#">Cookie Preferences</a></li>
+									<li><a href="#">Terms and Conditions</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer-bottom__bottom">
+							<p>‘XARU’ is an EU IPO registered trademark with registration number 018915416. The website https://xaru.io in all languages and markets is provided by ‘Xaru Financial Solutions IKE’, a company incorporated in Athens, Greece with registry number 167396603000.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="wrapper"></button>
+
+
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>
